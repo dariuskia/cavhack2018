@@ -1,5 +1,15 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
 .header {
-    background-color: gray;
+    /*Will remove later*/
+    background-color: none;
 }
 .nav-links {
     display: inline-block;
@@ -11,8 +21,14 @@
 .padding-top {
     padding-top: 20px;
 }
+.padding-right2 {
+    padding-right: 5px;
+}
 .padding-bottom {
     padding-bottom: 20px;
+}
+.padding-bottom2 {
+    padding-bottom: 10px;
 }
 .em-svg {
     width: 30px !important;
@@ -20,16 +36,84 @@
 }
 .center-parent {
     text-align: center;
+    padding-bottom: 25px;
 }
 .game {
-    height: 500px;
-    width: 1000px;
+    height: 30em;
+    width: 60em;
+    /*Will remove later*/
     background-color: blue;
     display: inline-block;
+    color: white;
 }
 .nav-links {
     font-size: 18px;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 600 !important;
+}
+.navbar-links {
+    color: rgb(47, 125, 228);
+    transition: 0.1s ease-out;
+    display: inline-block;
+    text-decoration: none;
+}
+.navbar-links:hover {
+    text-decoration: none;
+    color: #52a3ff;
+    transition: 0.1s ease-in
 }
 h1 {
     font-size: 50px !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 700 !important;
+    color: rgb(32, 32, 32) !important;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 600 !important;
+}
+p {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+}
+.padding-everywhere {
+    padding: 100px;
+}
+.card {
+    transition: 0.25s ease-out;
+}
+.card:hover {
+    box-shadow: 0px 3px 10px #9c9c9c49;
+    transition: 0.25s ease-in;
+    transform: translateY(-5px);
+}
+.card-body {
+    padding-bottom: 50px;
+}
+.padding-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.em-svg {
+    width: 35px !important;
+    height: 35px !important;
+}
+.em {
+    width: 30px !important;
+    height: 30px !important;
+    vertical-align: middle !important;
+}
+.small {
+    width: 20px !important;
+    height: 20px !important;
+}
+.footer {
+    text-align: center;
+}
+.end {
+    width: 100%;
+    height: 2px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    position: absolute;
 }
