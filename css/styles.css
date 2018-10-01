@@ -1,0 +1,35 @@
+.header {
+    background-color: gray;
+}
+.nav-links {
+    display: inline-block;
+    padding-left: 50px;
+}
+.padding-right {
+    padding-right: 50px;
+}
+.padding-top {
+    padding-top: 20px;
+}
+.padding-bottom {
+    padding-bottom: 20px;
+}
+.em-svg {
+    width: 30px !important;
+    height: 30px !important;
+}
+.center-parent {
+    text-align: center;
+}
+.game {
+    height: 500px;
+    width: 1000px;
+    background-color: blue;
+    display: inline-block;
+}
+.nav-links {
+    font-size: 18px;
+}
+h1 {
+    font-size: 50px !important;
+}
