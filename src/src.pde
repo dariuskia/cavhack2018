@@ -1,3 +1,4 @@
+/* @pjs preload="../imgs/hoop.png,../imgs/wallpaper.jpg,../imgs/ball.png"; crisp="true"; */ 
 PImage hoop;
 PImage wallpaper;
 PFont scorefont;
@@ -20,7 +21,7 @@ void setup() {
 }
 
 void draw() {
-  background(wallpaper);
+  image(wallpaper, 500, 250);
   //textFont(scorefont);
   fill(255, 176, 30);
   textSize(20);
