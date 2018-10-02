@@ -1,6 +1,6 @@
 # Boolin'
 ## An interactive online basketball game!
-Play the game [here](https://www.boolin.pw "Boolin'
+Play the game [here](https://www.boolin.pw "Boolin")
 (Works best on a desktop!)
 
 
