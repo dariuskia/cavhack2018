@@ -1,6 +1,8 @@
 # Boolin'
 ## An interactive online basketball game!
-(Web implementation soon to be uploaded...)
+Play the game [here](https://www.boolin.pw "Boolin'
+(Works best on a desktop!)
+
 
 This application was made during CavHack 2018
 
