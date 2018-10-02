@@ -35,7 +35,7 @@ body {
     padding-bottom: 25px;
 }
 canvas {
-    height: 400px;
+    height: 425px;
     width: 900px;
     /*Will remove later*/
     display: inline-block;
