@@ -35,8 +35,8 @@ body {
     padding-bottom: 25px;
 }
 .game {
-    height: 30em;
-    width: 60em;
+    height: 400px;
+    width: 1000px;
     /*Will remove later*/
     display: inline-block;
 }
