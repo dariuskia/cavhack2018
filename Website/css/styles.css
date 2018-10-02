@@ -42,9 +42,7 @@ body {
     height: 30em;
     width: 60em;
     /*Will remove later*/
-    background-color: blue;
     display: inline-block;
-    color: white;
 }
 .nav-links {
     font-size: 18px;
