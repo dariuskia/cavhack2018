@@ -7,10 +7,6 @@ body {
     padding: 0px;
     position: relative;
 }
-.header {
-    /*Will remove later*/
-    background-color: none;
-}
 .nav-links {
     display: inline-block;
     padding-left: 50px;
