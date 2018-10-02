@@ -34,11 +34,23 @@ body {
     text-align: center;
     padding-bottom: 25px;
 }
-.game {
+canvas {
     height: 400px;
-    width: 1000px;
+    width: 900px;
     /*Will remove later*/
     display: inline-block;
+}
+@media only screen and (max-width: 1200px) {
+    canvas {
+        width: 60%;
+        height: 40%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    canvas {
+        height: 50%;
+        width: 80%;
+    }
 }
 .nav-links {
     font-size: 18px;
