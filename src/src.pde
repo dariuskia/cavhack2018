@@ -27,7 +27,7 @@ void draw() {
   text("Score: " + score, width - 100, 30);
   text("Misses: " + missed, width - 100, 50);
   image(hoop, mouseX, height - 150);
-  if (missed < 5) {
+  if (missed < 20) {
     for (ball basketball : balls) {
       basketball.fall();
       if (dist(basketball.x, basketball.y, mouseX, 425) <= 50) {
