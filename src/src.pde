@@ -21,7 +21,7 @@ void setup() {
 }
 
 void draw() {
-  image(wallpaper, 500, 250);
+  background(wallpaper);
   //textFont(scorefont);
   fill(255, 176, 30);
   textSize(20);
