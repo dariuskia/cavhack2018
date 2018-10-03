@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boolin'</title>
+        <meta name="description" content="An online online basketball game.">
+        <meta name="author" content="Darius Kianersi, Aaron Amartuvshin, Tony Tran, and Daniel Sitrin">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <!--favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#a54a1a">
+        <meta name="msapplication-TileColor" content="#b91d47">
+        <meta name="theme-color" content="#ffffff">
+        <!--styles for site-->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!--icons-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <!--emoji stylesheet-->
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <!--bootstrap-->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+        
+        <!--processingjs-->
+        <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+
+    </head>
+    <body>
+        <!--
+        <div class="top-nav text-right">
+            <div class="links">
+                <ul class="navbar-links padding-right padding-top padding-bottom2">
+                    <li class="nav-links"><a href="#how-to" class="navbar-links">How to Play</a></li>
+                    <li class="nav-links"><a href="#about" class="navbar-links">About</a></li>
+                    <li class="nav-links"><a href="#team" class="navbar-links">Team</a></li>
+                </ul>
+            </div>
+        </div>
+    -->
+        <div id="play">
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col mx-auto" align="middle">
+                            <h1 class="padding-top"><i class="em em-basketball"></i>Boolin'<i class="em em-basketball"></i></h1>
+                            <h4 class="text-muted padding-bottom">An online interactive basketball game.</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mx-auto center-parent">
+                                <div class="game">
+                                    <!--game goes here-->
+                                    <canvas data-processing-sources="/src/src.pde"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="row">
+                            <div class="col mx-auto" align="middle">
+                                <div class="github">
+                                    <a href="https://github.com/darius-kia/cavhack2018" target="_blank"><button type="button" class="btn btn-outline-primary"><i class="fab fa-github padding-right2"></i>Fork us on GitHub!</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div id="how-to" class="padding-bottom padding-section">
+            <div class="title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col mx-auto" align="middle">
+                            <h2 class="padding-top">How To Play <i class="em-svg em-video_game"></i></h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mx-auto text-center">
+                                <p>The objective of this game is to collect as many basketballs as you can using a hoop which only moves on a horizontal-axis. The hoop can be controlled by moving your mouse left to right, and the number of basketballs that are scored and missed are recorded at the top right of your screen. If you miss 5 balls, then the game is over.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div id="about">
+            <div class="title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col mx-auto" align="middle">
+                            <h2 class="padding-top">About <i class="em-svg em-information_source"></i></h2>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mx-auto text-center">
+                                <p>This game was made for the inaugural hackathon of <a href="http://cavhack.org/">CavHack 2018</a>. We decided to make a Java applet with our knowledge of web development to complement the program, and we thought that others would enjoy playing it just as much as we enjoyed creating it!</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div id="team" class="padding-bottom">
+            <div class="title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col mx-auto" align="middle">
+                            <h2 class="padding-top">The Team <i class="em-svg em-fire"></i></h2>
+                            </div>
+                        </div>
+                    <div class="row">
+                    <div class="card-deck padding-top padding-bottom">
+                        <div class="card mb-4">
+                            <img class="card-img-top img-fluid" src="https://t0.rbxcdn.com/e47c647940cba30d1c4bd7f15397be7e" alt="Darius Kianersi">
+                            <div class="card-body">
+                                <h5 class="card-title">Darius Kianersi</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Game Programmer</h6>
+                                <p class="card-text">Darius "Bands" Kianersi is the CEO of Epic Games and single handedly made Fortnite. Mans got Benjamins.  <i class="em em-moneybag"></i></p>
+                                <a href="https://instagram.com/darius.kia" target="_blank" class="card-link">Instagram</a>
+                                <a href="https://github.com/darius-kia" target="_blank" class="card-link">GitHub</a>
+                                </div>
+                                </div>
+                        <div class="card mb-4">
+                            <img class="card-img-top img-fluid" src="https://media.karousell.com/media/photos/products/2017/07/26/mirai_nikki_yuno_gasai_cosplay_1501021864_bd171975.jpg" alt="Aaron Amartuvshin">
+                            <div class="card-body">
+                                <h5 class="card-title">Aaron Amartuvshin</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Game Designer</h6>
+                                <p class="card-text">Aaron "Trap" Amartuvshin lives in Kyoto, Japan and owns a manga shop. He also sells waifu body pillows.  <i class="em em-jp"></i></p>
+                                <a href="https://instagram.com/_nudist_beach_" target="_blank" class="card-link">Instagram</a>
+                                </div>
+                            </div>
+                        <div class="card mb-4">
+                            <img class="card-img-top img-fluid" src="https://www.famousbirthdays.com/headshots/tyler-blevins-6.jpg" alt="Tony Tran">
+                            <div class="card-body">
+                                <h5 class="card-title">Tony Tran</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Website Creator</h6>
+                                <p class="card-text">Tony "Ninja" Tran is the President of the Ninja Fan Club and sells Ninja merchandise. He lives in Ninja's basement.  <i class="em em-shushing_face"></i></p>
+                                <a href="https://instagram.com/yontesnt" target="_blank" class="card-link">Instagram</a>
+                                <a href="https://github.com/tot" target="_blank" class="card-link">GitHub</a>
+                                </div>
+                            </div>
+                        <div class="card mb-4">
+                            <img class="card-img-top" src="https://www.biography.com/.image/t_share/MTE4MDAzNDEwNTI1NDU1ODg2/anne-frank-9300892-1-402.jpg" alt="Daniel Sitrin">
+                            <div class="card-body">
+                                <h5 class="card-title">Daniel Sitrin</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Website Creator</h6>
+                                <p class="card-text">Daniel Sitrin is a Jewish accountant working for Dunder Mifflin and loves writing in his diary from 1945. <i class="em em-book"></i></p>
+                                <a href="https://www.instagram.com/daniel_s_1242/" target="_blank" class="card-link">Instagram</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="end">
+                <h6 class="padding-top padding-bottom2">Made with <i class=" small em em-heart"></i> using <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> and <a href="https://github.com/TheFeministSoftwareFoundation/C-plus-Equality" target="_blank"><strike>Equality</strike></a> <a href="http://processingjs.org/" target="_blank">Processing.js</a>.</h6>
+            </div>
+        </div>
+    </body>
+</html>
